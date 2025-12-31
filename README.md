@@ -6,6 +6,8 @@
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/dsfsi)
 [![Website](https://img.shields.io/badge/Web-dsfsi.co.za-green)](https://www.dsfsi.co.za)
 
+**Last Updated**: December 31, 2025
+
 This repository serves as the comprehensive catalog and registry for all publicly available datasets produced by the DSFSI research group at the University of Pretoria. Our datasets span multiple domains including Natural Language Processing, Speech Recognition, Public Health, Legal Documents, Financial Data, and more, with a focus on South African and African languages and contexts.
 
 ## Table of Contents
@@ -40,7 +42,6 @@ Our most popular and impactful datasets:
 - **Type**: Speech/Audio
 - **Size**: 3,000 hours of audio
 - **Languages**: 7 South African languages (isiZulu, Setswana, Sesotho sa Leboa, Tshivenda, Xitsonga, isiXhosa, Sesotho)
-- **Downloads**: 451k+ | **Stars**: 4.38k
 - **Models**: 8 Whisper-based ASR models available
 - **License**: Custom (see dataset card)
 - **Use Cases**: Automatic Speech Recognition, Speech-to-Text, Low-resource Language Processing
@@ -52,11 +53,11 @@ Our most popular and impactful datasets:
 - **Type**: Terminology/Lexicon
 - **Datasets**: 9+ specialized glossaries
 - **Languages**: 11 South African languages
-- **Downloads**: 100k+ combined
 - **Notable Collections**:
-  - [DSAC Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-dsac) (15.6k downloads, 613 stars)
-  - [StatsSA Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-statssa) (1.16k downloads, 88 stars)
-  - [OERTB Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-oertb) (5.74k downloads)
+  - [DSAC Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-dsac)
+  - [StatsSA Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-statssa)
+  - [OERTB Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-oertb)
+  - [UP Glossary](https://huggingface.co/datasets/dsfsi/za-mafoko-up-glossary)
 - **License**: Various (see individual datasets)
 - **Use Cases**: Machine Translation, Terminology Management, Multilingual NLP
 
@@ -91,8 +92,7 @@ Our most popular and impactful datasets:
 - **Platform**: [GitHub](https://github.com/dsfsi/PuoBERTa) | [HuggingFace Model](https://huggingface.co/dsfsi/PuoBERTa) | [HuggingFace Dataset](https://huggingface.co/datasets/dsfsi/PuoData)
 - **Type**: Text/Language Model
 - **Language**: Setswana (Tswana)
-- **Downloads**: 126k+ (dataset)
-- **Stars**: 132 (dataset), 5 (repo)
+- **GitHub Stars**: 5
 - **Variants**: PuoBERTa-News, PuoBERTa-NER, PuoBERTa-POS
 - **License**: CC BY 4.0
 - **Performance**: 83.4 F1 (POS tagging), 78.2 F1 (NER)
@@ -105,12 +105,12 @@ Our most popular and impactful datasets:
 
 ### Speech & Audio
 
-| Dataset | Platform | Languages | Size | Downloads/Stars |
-|---------|----------|-----------|------|-----------------|
-| [African Next Voices (ZA-ANV)](https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices) | HuggingFace | 7 SA languages | 3,000 hours | 451k / 4.38k ⭐ |
-| [Vuk'uzenzele isiXhosa Speech (ViXSD)](https://huggingface.co/datasets/lelapa/Vukuzenzele_isiXhosa_Speech_Dataset_ViXSD) | HuggingFace | isiXhosa | - | - |
-| [NCHLT Speech Corpus](https://rma.nwu.ac.za/index.php/resource-catalogue/nchlt-speech-corpus.html) | NWU Repository | 11 SA languages | - | - |
-| [Lwazi Speech Corpus](https://repo.sadilar.org/handle/20.500.12185/7) | SADiLaR | Multiple | - | - |
+| Dataset | Platform | Languages | Size |
+|---------|----------|-----------|------|
+| [African Next Voices (ZA-ANV)](https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices) | HuggingFace | 7 SA languages | 3,000 hours |
+| [Vuk'uzenzele isiXhosa Speech (ViXSD)](https://huggingface.co/datasets/lelapa/Vukuzenzele_isiXhosa_Speech_Dataset_ViXSD) | HuggingFace | isiXhosa | - |
+| [NCHLT Speech Corpus](https://rma.nwu.ac.za/index.php/resource-catalogue/nchlt-speech-corpus.html) | NWU Repository | 11 SA languages | - |
+| [Lwazi Speech Corpus](https://repo.sadilar.org/handle/20.500.12185/7) | SADiLaR | Multiple | - |
 
 **ASR Models Available**:
 - [Multilingual Whisper v3 Turbo](https://huggingface.co/dsfsi-anv/multilingual-whisper-v3-turbo) (0.8B params)
@@ -145,10 +145,10 @@ Our most popular and impactful datasets:
 
 #### Language-Specific Datasets
 
-| Dataset | Platform | Language | Description | Downloads/Stars |
-|---------|----------|----------|-------------|-----------------|
-| [PuoData](https://huggingface.co/datasets/dsfsi/PuoData) | HuggingFace | Setswana | Curated Setswana text corpus | 126k / 132 ⭐ |
-| [ANV Paper Sample](https://huggingface.co/datasets/dsfsi/anv_paper_sample) | HuggingFace | Multiple | Sample from ANV research | 2.28k / 26 ⭐ |
+| Dataset | Platform | Language | Description |
+|---------|----------|----------|-------------|
+| [PuoData](https://huggingface.co/datasets/dsfsi/PuoData) | HuggingFace | Setswana | Curated Setswana text corpus |
+| [ANV Paper Sample](https://huggingface.co/datasets/dsfsi/anv_paper_sample) | HuggingFace | Multiple | Sample from ANV research |
 
 #### Cross-lingual & Translation
 
@@ -174,16 +174,16 @@ Our most popular and impactful datasets:
 
 The **za-mafoko** collection provides comprehensive multilingual terminologies:
 
-| Dataset | Platform | Source | Downloads | Stars |
-|---------|----------|--------|-----------|-------|
-| [DSAC Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-dsac) | HuggingFace | Dept. Sport, Arts & Culture | 15.6k | 613 ⭐ |
-| [StatsSA Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-statssa) | HuggingFace | Statistics South Africa | 1.16k | 88 ⭐ |
-| [UNISA Multilingual](https://huggingface.co/datasets/dsfsi/za-mafoko-unisa-multilingual) | HuggingFace | University of South Africa | 778 | 15 ⭐ |
-| [OERTB Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-oertb) | HuggingFace | Open Educational Resources | 5.74k | 13 ⭐ |
-| [UP Glossary](https://huggingface.co/datasets/dsfsi/za-mafoko-up-glossary) | HuggingFace | University of Pretoria | 1.77k | 100 ⭐ |
-| [AI Glossary](https://huggingface.co/datasets/dsfsi/za-mafoko-ai-glossary) | HuggingFace | AI/ML terminology | 85 | 27 ⭐ |
-| [UNISA Robotics](https://huggingface.co/datasets/dsfsi/za-mafoko-unisa-robotics) | HuggingFace | Robotics terminology | 100 | 16 ⭐ |
-| [Tshivenda Augmented](https://huggingface.co/datasets/dsfsi/mafoko-tshivenda-augmented-translations) | HuggingFace | Tshivenda translations | 100 | 64 ⭐ |
+| Dataset | Platform | Source |
+|---------|----------|--------|
+| [DSAC Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-dsac) | HuggingFace | Dept. Sport, Arts & Culture |
+| [StatsSA Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-statssa) | HuggingFace | Statistics South Africa |
+| [UNISA Multilingual](https://huggingface.co/datasets/dsfsi/za-mafoko-unisa-multilingual) | HuggingFace | University of South Africa |
+| [OERTB Terminology](https://huggingface.co/datasets/dsfsi/za-mafoko-oertb) | HuggingFace | Open Educational Resources |
+| [UP Glossary](https://huggingface.co/datasets/dsfsi/za-mafoko-up-glossary) | HuggingFace | University of Pretoria |
+| [AI Glossary](https://huggingface.co/datasets/dsfsi/za-mafoko-ai-glossary) | HuggingFace | AI/ML terminology |
+| [UNISA Robotics](https://huggingface.co/datasets/dsfsi/za-mafoko-unisa-robotics) | HuggingFace | Robotics terminology |
+| [Tshivenda Augmented](https://huggingface.co/datasets/dsfsi/mafoko-tshivenda-augmented-translations) | HuggingFace | Tshivenda translations |
 
 **Web Portal**: [za-mafoko.dsfsi.co.za](https://www.dsfsi.co.za/za-mafoko/)
 
@@ -310,14 +310,14 @@ Curated datasets for coursework and teaching:
 ### HuggingFace 🤗
 
 **Organization**: [dsfsi](https://huggingface.co/dsfsi)
-- 22 datasets, 30+ models
+- 22+ datasets, 30+ models
 - Collections: za-mafoko, PuoBERTa
 
 **Organization**: [dsfsi-anv](https://huggingface.co/dsfsi-anv)
-- African Next Voices dataset
+- African Next Voices dataset (3,000 hours multilingual speech)
 - 8 Whisper ASR models
 
-**Browse**: [HuggingFace Datasets](https://huggingface.co/dsfsi/datasets)
+**Browse All**: [HuggingFace DSFSI Datasets](https://huggingface.co/dsfsi)
 
 ### GitHub
 

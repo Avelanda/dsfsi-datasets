@@ -2,11 +2,11 @@
 
 ## Top 5 Datasets (Start Here)
 
-1. **[African Next Voices](https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices)** - 3,000 hrs multilingual speech (451k downloads)
-2. **[za-mafoko](https://huggingface.co/collections/dsfsi/za-mafoko)** - Multilingual terminologies (100k+ downloads)
-3. **[COVID-19 ZA](https://github.com/dsfsi/covid19za)** - SA pandemic data (256 stars)
-4. **[PuoData](https://huggingface.co/datasets/dsfsi/PuoData)** - Setswana corpus (126k downloads)
-5. **[Vuk'uzenzele](https://github.com/dsfsi/vukuzenzele-nlp)** - 11-language parallel corpus
+1. **[African Next Voices](https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices)** - 3,000 hrs multilingual speech
+2. **[za-mafoko](https://huggingface.co/collections/dsfsi/za-mafoko)** - Multilingual terminologies (9+ glossaries)
+3. **[COVID-19 ZA](https://github.com/dsfsi/covid19za)** - SA pandemic data (256 ⭐)
+4. **[PuoData](https://huggingface.co/datasets/dsfsi/PuoData)** - Setswana corpus + PuoBERTa models
+5. **[Vuk'uzenzele](https://github.com/dsfsi/vukuzenzele-nlp)** - 11-language parallel corpus (7 ⭐)
 
 ## Quick Access by Need
 
@@ -190,3 +190,9 @@ tn_datasets = [d for d in registry['datasets']
 - **Discovery guide**: [DATASETS_GUIDE.md](DATASETS_GUIDE.md)
 - **Contributing**: [CONTRIBUTING.md](CONTRIBUTING.md)
 - **For Claude Code**: [CLAUDE.md](CLAUDE.md)
+
+---
+
+**Last Updated**: December 31, 2025
+
+**Note**: GitHub stars (⭐) shown where available. HuggingFace download counts excluded to avoid frequent updates.

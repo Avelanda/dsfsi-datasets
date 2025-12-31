@@ -4,8 +4,9 @@
     "organization": "Data Science for Social Impact (DSFSI) Research Group",
     "institution": "University of Pretoria",
     "last_updated": "2025-12-31",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "total_datasets": 50,
+    "note": "HuggingFace download/star stats excluded; GitHub and Zenodo stats included where available",
     "contact": "dsfsi.info@up.ac.za",
     "website": "https://www.dsfsi.co.za",
     "social_media": {
@@ -26,8 +27,6 @@
       "url": "https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices",
       "languages": ["zu", "tn", "nso", "ve", "ts", "xh", "st"],
       "size": "3000 hours",
-      "downloads": 451000,
-      "stars": 4380,
       "license": "custom",
       "tags": ["speech", "asr", "multilingual", "low-resource"],
       "featured": true
@@ -40,7 +39,6 @@
       "platform": "huggingface",
       "url": "https://huggingface.co/collections/dsfsi/za-mafoko",
       "languages": ["af", "en", "zu", "xh", "st", "nso", "tn", "nr", "ss", "ve", "ts"],
-      "downloads": 100000,
       "license": "various",
       "tags": ["terminology", "lexicon", "multilingual", "translation"],
       "featured": true
@@ -53,7 +51,6 @@
       "platform": "github",
       "url": "https://github.com/dsfsi/covid19za",
       "languages": ["en"],
-      "stars": 256,
       "forks": 197,
       "contributors": 64,
       "license": "MIT (code), CC BY-SA 4.0 (data)",
@@ -71,7 +68,6 @@
       "url": "https://github.com/dsfsi/vukuzenzele-nlp",
       "languages": ["en", "af", "zu", "xh", "st", "nso", "tn", "nr", "ss", "ve", "ts"],
       "size": "2200+ aligned sentence pairs",
-      "stars": 7,
       "forks": 6,
       "license": "MIT (code), CC 4.0 BY (data)",
       "tags": ["multilingual", "parallel-corpus", "machine-translation", "government"],
@@ -87,8 +83,6 @@
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/PuoData",
       "languages": ["tn"],
-      "downloads": 126000,
-      "stars": 132,
       "license": "CC BY 4.0",
       "tags": ["setswana", "language-model", "bert", "low-resource"],
       "featured": true,
@@ -105,8 +99,6 @@
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices-compressed",
       "languages": ["zu", "tn", "nso", "ve", "ts", "xh", "st"],
-      "downloads": 459000,
-      "stars": 20,
       "tags": ["speech", "asr", "compressed"]
     },
     {
@@ -142,7 +134,6 @@
       "platform": "github",
       "url": "https://github.com/dsfsi/gov-za-multilingual",
       "languages": ["en", "af", "zu", "xh", "st", "nso", "tn", "nr", "ss", "ve", "ts"],
-      "stars": 4,
       "license": "MIT",
       "tags": ["government", "multilingual", "parallel-corpus"]
     },
@@ -152,7 +143,6 @@
       "category": "text",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/govza-sa-cabinet-statements-sentence-aligned",
-      "downloads": 15,
       "tags": ["government", "sentence-alignment", "multilingual"]
     },
     {
@@ -188,8 +178,6 @@
       "category": "text",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/anv_paper_sample",
-      "downloads": 2280,
-      "stars": 26,
       "tags": ["sample", "research"]
     },
     {
@@ -240,8 +228,6 @@
       "category": "terminology",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-dsac",
-      "downloads": 15600,
-      "stars": 613,
       "tags": ["terminology", "dsac", "multilingual"]
     },
     {
@@ -250,8 +236,6 @@
       "category": "terminology",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-statssa",
-      "downloads": 1160,
-      "stars": 88,
       "tags": ["terminology", "statistics", "multilingual"]
     },
     {
@@ -260,8 +244,6 @@
       "category": "terminology",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-unisa-multilingual",
-      "downloads": 778,
-      "stars": 15,
       "tags": ["terminology", "education", "multilingual"]
     },
     {
@@ -270,8 +252,6 @@
       "category": "terminology",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-oertb",
-      "downloads": 5740,
-      "stars": 13,
       "tags": ["terminology", "education", "multilingual"]
     },
     {
@@ -280,8 +260,6 @@
       "category": "terminology",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-up-glossary",
-      "downloads": 1770,
-      "stars": 100,
       "tags": ["terminology", "university", "multilingual"]
     },
     {
@@ -290,8 +268,6 @@
       "category": "terminology",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-ai-glossary",
-      "downloads": 85,
-      "stars": 27,
       "tags": ["terminology", "ai", "ml", "multilingual"]
     },
     {
@@ -300,8 +276,6 @@
       "category": "terminology",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-unisa-robotics",
-      "downloads": 100,
-      "stars": 16,
       "tags": ["terminology", "robotics", "multilingual"]
     },
     {
@@ -310,8 +284,6 @@
       "category": "terminology",
       "platform": "huggingface",
       "url": "https://huggingface.co/datasets/dsfsi/mafoko-tshivenda-augmented-translations",
-      "downloads": 100,
-      "stars": 64,
       "languages": ["ve"],
       "tags": ["terminology", "tshivenda", "translation"]
     },
@@ -433,8 +405,6 @@
       "platform": "huggingface",
       "url": "https://huggingface.co/dsfsi/PuoBERTa",
       "languages": ["tn"],
-      "downloads": 27,
-      "stars": 2,
       "tags": ["setswana", "bert", "language-model"]
     },
     {
