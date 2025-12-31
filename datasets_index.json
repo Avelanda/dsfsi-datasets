@@ -1,0 +1,491 @@
+{
+  "metadata": {
+    "registry_name": "DSFSI Public Datasets Registry",
+    "organization": "Data Science for Social Impact (DSFSI) Research Group",
+    "institution": "University of Pretoria",
+    "last_updated": "2025-12-31",
+    "version": "1.0.0",
+    "total_datasets": 50,
+    "contact": "dsfsi.info@up.ac.za",
+    "website": "https://www.dsfsi.co.za",
+    "social_media": {
+      "twitter": "https://twitter.com/dsfsi_research",
+      "linkedin": "https://www.linkedin.com/company/dsfsi",
+      "bluesky": "https://bsky.app/profile/dsfsi.bsky.social",
+      "github": "https://github.com/dsfsi",
+      "huggingface": "https://huggingface.co/dsfsi"
+    }
+  },
+  "featured_datasets": [
+    {
+      "id": "za-anv",
+      "name": "African Next Voices (ZA-ANV)",
+      "description": "The largest publicly available multilingual speech dataset for South African languages",
+      "type": "speech",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices",
+      "languages": ["zu", "tn", "nso", "ve", "ts", "xh", "st"],
+      "size": "3000 hours",
+      "downloads": 451000,
+      "stars": 4380,
+      "license": "custom",
+      "tags": ["speech", "asr", "multilingual", "low-resource"],
+      "featured": true
+    },
+    {
+      "id": "za-mafoko",
+      "name": "za-mafoko: Multilingual Terminology Collection",
+      "description": "Comprehensive multilingual terminologies and glossaries for South African languages",
+      "type": "terminology",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/collections/dsfsi/za-mafoko",
+      "languages": ["af", "en", "zu", "xh", "st", "nso", "tn", "nr", "ss", "ve", "ts"],
+      "downloads": 100000,
+      "license": "various",
+      "tags": ["terminology", "lexicon", "multilingual", "translation"],
+      "featured": true
+    },
+    {
+      "id": "covid19za",
+      "name": "COVID-19 South Africa Data",
+      "description": "Comprehensive COVID-19 data repository and dashboard for South Africa",
+      "type": "health",
+      "platform": "github",
+      "url": "https://github.com/dsfsi/covid19za",
+      "languages": ["en"],
+      "stars": 256,
+      "forks": 197,
+      "contributors": 64,
+      "license": "MIT (code), CC BY-SA 4.0 (data)",
+      "tags": ["covid-19", "public-health", "time-series", "dashboard"],
+      "featured": true,
+      "zenodo_url": "https://zenodo.org/record/3819126",
+      "dashboard_url": "https://dsfsi.github.io/covid19za-dash/"
+    },
+    {
+      "id": "vukuzenzele",
+      "name": "Vuk'uzenzele Multilingual Corpus",
+      "description": "South African government magazine corpus in 11 languages",
+      "type": "text",
+      "platform": "github",
+      "url": "https://github.com/dsfsi/vukuzenzele-nlp",
+      "languages": ["en", "af", "zu", "xh", "st", "nso", "tn", "nr", "ss", "ve", "ts"],
+      "size": "2200+ aligned sentence pairs",
+      "stars": 7,
+      "forks": 6,
+      "license": "MIT (code), CC 4.0 BY (data)",
+      "tags": ["multilingual", "parallel-corpus", "machine-translation", "government"],
+      "featured": true,
+      "zenodo_url": "https://zenodo.org/record/7598539",
+      "paper_url": "https://link.springer.com/chapter/10.1007/978-3-031-37599-1_7"
+    },
+    {
+      "id": "puoberta",
+      "name": "PuoBERTa & PuoData",
+      "description": "Setswana language model and curated dataset",
+      "type": "text",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/PuoData",
+      "languages": ["tn"],
+      "downloads": 126000,
+      "stars": 132,
+      "license": "CC BY 4.0",
+      "tags": ["setswana", "language-model", "bert", "low-resource"],
+      "featured": true,
+      "model_url": "https://huggingface.co/dsfsi/PuoBERTa",
+      "github_url": "https://github.com/dsfsi/PuoBERTa",
+      "paper_url": "https://arxiv.org/abs/2310.09141"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "za-anv-compressed",
+      "name": "African Next Voices (Compressed)",
+      "category": "speech",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices-compressed",
+      "languages": ["zu", "tn", "nso", "ve", "ts", "xh", "st"],
+      "downloads": 459000,
+      "stars": 20,
+      "tags": ["speech", "asr", "compressed"]
+    },
+    {
+      "id": "vixsd",
+      "name": "Vuk'uzenzele isiXhosa Speech Dataset (ViXSD)",
+      "category": "speech",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/lelapa/Vukuzenzele_isiXhosa_Speech_Dataset_ViXSD",
+      "languages": ["xh"],
+      "tags": ["speech", "isixhosa", "low-resource"]
+    },
+    {
+      "id": "nchlt-speech",
+      "name": "NCHLT Speech Corpus",
+      "category": "speech",
+      "platform": "other",
+      "url": "https://rma.nwu.ac.za/index.php/resource-catalogue/nchlt-speech-corpus.html",
+      "languages": ["af", "en", "zu", "xh", "st", "nso", "tn", "nr", "ss", "ve", "ts"],
+      "tags": ["speech", "nchlt", "multilingual"]
+    },
+    {
+      "id": "lwazi-speech",
+      "name": "Lwazi Speech Corpus",
+      "category": "speech",
+      "platform": "sadilar",
+      "url": "https://repo.sadilar.org/handle/20.500.12185/7",
+      "tags": ["speech", "multilingual"]
+    },
+    {
+      "id": "govza-multilingual",
+      "name": "ZA-Gov Multilingual",
+      "category": "text",
+      "platform": "github",
+      "url": "https://github.com/dsfsi/gov-za-multilingual",
+      "languages": ["en", "af", "zu", "xh", "st", "nso", "tn", "nr", "ss", "ve", "ts"],
+      "stars": 4,
+      "license": "MIT",
+      "tags": ["government", "multilingual", "parallel-corpus"]
+    },
+    {
+      "id": "govza-cabinet-statements",
+      "name": "Gov-ZA Cabinet Statements (Sentence-Aligned)",
+      "category": "text",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/govza-sa-cabinet-statements-sentence-aligned",
+      "downloads": 15,
+      "tags": ["government", "sentence-alignment", "multilingual"]
+    },
+    {
+      "id": "izindaba-tindzaba",
+      "name": "IsiZulu & Siswati News 2022",
+      "category": "text",
+      "platform": "github",
+      "url": "https://github.com/dsfsi/za-isizulu-siswati-news-2022",
+      "languages": ["zu", "ss"],
+      "tags": ["news", "classification", "isizulu", "siswati"]
+    },
+    {
+      "id": "sa-news-2020",
+      "name": "South African News Data (2020)",
+      "category": "text",
+      "platform": "zenodo",
+      "url": "https://zenodo.org/record/3668495",
+      "tags": ["news", "classification"]
+    },
+    {
+      "id": "za-fake-news-2020",
+      "name": "ZA Fake News 2020",
+      "category": "text",
+      "platform": "zenodo",
+      "url": "https://zenodo.org/record/4682843",
+      "languages": ["en"],
+      "tags": ["disinformation", "fake-news", "classification"],
+      "github_url": "https://github.com/dsfsi/za-fake-news-2020"
+    },
+    {
+      "id": "anv-paper-sample",
+      "name": "ANV Paper Sample",
+      "category": "text",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/anv_paper_sample",
+      "downloads": 2280,
+      "stars": 26,
+      "tags": ["sample", "research"]
+    },
+    {
+      "id": "umsuka-parallel",
+      "name": "Umsuka EN-IsiZulu Parallel Corpus",
+      "category": "text",
+      "platform": "zenodo",
+      "url": "https://zenodo.org/record/5035171",
+      "languages": ["en", "zu"],
+      "tags": ["parallel-corpus", "machine-translation", "isizulu"]
+    },
+    {
+      "id": "kinyarwanda-kirundi",
+      "name": "Cross-lingual Kinyarwanda-Kirundi Models",
+      "category": "text",
+      "platform": "github",
+      "url": "https://github.com/rulezcasa/Cross-lingual-Kinyarwanda_Kirundi",
+      "languages": ["rw", "rn"],
+      "tags": ["cross-lingual", "kinyarwanda", "kirundi"]
+    },
+    {
+      "id": "masakhane-mt",
+      "name": "Masakhane Machine Translation",
+      "category": "text",
+      "platform": "github",
+      "url": "https://github.com/masakhane-io/masakhane-mt",
+      "tags": ["machine-translation", "african-languages", "participatory"]
+    },
+    {
+      "id": "african-embeddings",
+      "name": "African Pre-Trained Embeddings",
+      "category": "text",
+      "platform": "zenodo",
+      "url": "https://zenodo.org/record/3668481",
+      "tags": ["embeddings", "african-languages"]
+    },
+    {
+      "id": "afrocs-xs",
+      "name": "AfroCS-xs Code-Switched Dataset",
+      "category": "text",
+      "platform": "acl",
+      "url": "https://aclanthology.org/2025.acl-long.1601/",
+      "tags": ["code-switching", "african-languages"]
+    },
+    {
+      "id": "mafoko-dsac",
+      "name": "za-mafoko DSAC Terminology",
+      "category": "terminology",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-dsac",
+      "downloads": 15600,
+      "stars": 613,
+      "tags": ["terminology", "dsac", "multilingual"]
+    },
+    {
+      "id": "mafoko-statssa",
+      "name": "za-mafoko StatsSA Terminology",
+      "category": "terminology",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-statssa",
+      "downloads": 1160,
+      "stars": 88,
+      "tags": ["terminology", "statistics", "multilingual"]
+    },
+    {
+      "id": "mafoko-unisa",
+      "name": "za-mafoko UNISA Multilingual",
+      "category": "terminology",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-unisa-multilingual",
+      "downloads": 778,
+      "stars": 15,
+      "tags": ["terminology", "education", "multilingual"]
+    },
+    {
+      "id": "mafoko-oertb",
+      "name": "za-mafoko OERTB Terminology",
+      "category": "terminology",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-oertb",
+      "downloads": 5740,
+      "stars": 13,
+      "tags": ["terminology", "education", "multilingual"]
+    },
+    {
+      "id": "mafoko-up",
+      "name": "za-mafoko UP Glossary",
+      "category": "terminology",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-up-glossary",
+      "downloads": 1770,
+      "stars": 100,
+      "tags": ["terminology", "university", "multilingual"]
+    },
+    {
+      "id": "mafoko-ai",
+      "name": "za-mafoko AI Glossary",
+      "category": "terminology",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-ai-glossary",
+      "downloads": 85,
+      "stars": 27,
+      "tags": ["terminology", "ai", "ml", "multilingual"]
+    },
+    {
+      "id": "mafoko-robotics",
+      "name": "za-mafoko UNISA Robotics",
+      "category": "terminology",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/za-mafoko-unisa-robotics",
+      "downloads": 100,
+      "stars": 16,
+      "tags": ["terminology", "robotics", "multilingual"]
+    },
+    {
+      "id": "mafoko-tshivenda",
+      "name": "Mafoko Tshivenda Augmented Translations",
+      "category": "terminology",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/datasets/dsfsi/mafoko-tshivenda-augmented-translations",
+      "downloads": 100,
+      "stars": 64,
+      "languages": ["ve"],
+      "tags": ["terminology", "tshivenda", "translation"]
+    },
+    {
+      "id": "wordnets-sa",
+      "name": "WordNets for SA Languages (2020)",
+      "category": "terminology",
+      "platform": "zenodo",
+      "url": "https://zenodo.org/record/4299515",
+      "tags": ["wordnet", "lexicon", "multilingual"]
+    },
+    {
+      "id": "loughran-mcdonald-sa",
+      "name": "Loughran McDonald-SA-2020 Sentiment Word List",
+      "category": "terminology",
+      "platform": "up-repository",
+      "url": "https://researchdata.up.ac.za/articles/dataset/Loughran_McDonald-SA-2020_Sentiment_Word_List/14401178",
+      "tags": ["sentiment", "finance", "lexicon"]
+    },
+    {
+      "id": "zasca-sum",
+      "name": "ZASCA-Sum",
+      "category": "legal",
+      "platform": "up-repository",
+      "url": "https://researchdata.up.ac.za/articles/journal_contribution/ZASCA-Sum",
+      "tags": ["legal", "summarization", "court-documents"]
+    },
+    {
+      "id": "state-capture",
+      "name": "State Capture Commission Transcripts",
+      "category": "legal",
+      "platform": "github",
+      "url": "https://github.com/dsfsi/project-state-capture",
+      "tags": ["legal", "transcripts", "zondo-commission"]
+    },
+    {
+      "id": "jse-stocks",
+      "name": "JSE Top 40 Stock Data",
+      "category": "financial",
+      "platform": "local",
+      "location": "data/stocks/",
+      "coverage": "2019-2024",
+      "description": "Daily closing prices for JSE Top 40 companies (Jan-Apr each year)",
+      "format": ["csv", "pickle"],
+      "tags": ["stocks", "jse", "financial", "time-series"]
+    },
+    {
+      "id": "cos781-customer-segment",
+      "name": "Customer Segmentation Data",
+      "category": "educational",
+      "platform": "local",
+      "location": "data/cos781/",
+      "course": "COS781",
+      "tags": ["education", "customer-analytics", "segmentation"]
+    },
+    {
+      "id": "cos781-hypermarket",
+      "name": "Hypermarket Dataset",
+      "category": "educational",
+      "platform": "local",
+      "location": "data/cos781/",
+      "course": "COS781",
+      "tags": ["education", "retail", "transactions"]
+    },
+    {
+      "id": "cos781-market-basket",
+      "name": "Market Basket Optimisation",
+      "category": "educational",
+      "platform": "local",
+      "location": "data/cos781/",
+      "course": "COS781",
+      "tags": ["education", "market-basket", "association-rules"]
+    },
+    {
+      "id": "cos781-online-retail",
+      "name": "Online Retail II",
+      "category": "educational",
+      "platform": "local",
+      "location": "data/cos781/",
+      "course": "COS781",
+      "format": "zip",
+      "tags": ["education", "ecommerce", "transactions"]
+    },
+    {
+      "id": "cos802-ag-news",
+      "name": "AG News Dataset",
+      "category": "educational",
+      "platform": "local",
+      "location": "data/cos802/ag_news_csv/",
+      "course": "COS802",
+      "languages": ["en"],
+      "tags": ["education", "news", "classification"]
+    },
+    {
+      "id": "whats-cooking",
+      "name": "What's Cooking",
+      "category": "educational",
+      "platform": "local",
+      "location": "data/whats-cooking/",
+      "format": "zip",
+      "tags": ["education", "kaggle", "recipes"]
+    }
+  ],
+  "models": [
+    {
+      "id": "multilingual-whisper-v3-turbo",
+      "name": "Multilingual Whisper v3 Turbo",
+      "type": "automatic-speech-recognition",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/dsfsi-anv/multilingual-whisper-v3-turbo",
+      "parameters": "0.8B",
+      "languages": ["zu", "tn", "nso", "ve", "ts", "xh", "st"],
+      "tags": ["asr", "whisper", "multilingual"]
+    },
+    {
+      "id": "puoberta-model",
+      "name": "PuoBERTa",
+      "type": "fill-mask",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/dsfsi/PuoBERTa",
+      "languages": ["tn"],
+      "downloads": 27,
+      "stars": 2,
+      "tags": ["setswana", "bert", "language-model"]
+    },
+    {
+      "id": "puoberta-news",
+      "name": "PuoBERTa-News",
+      "type": "text-classification",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/dsfsi/PuoBERTa-News",
+      "languages": ["tn"],
+      "tags": ["setswana", "classification", "news"]
+    },
+    {
+      "id": "puoberta-pos",
+      "name": "PuoBERTa-POS",
+      "type": "token-classification",
+      "platform": "huggingface",
+      "url": "https://huggingface.co/dsfsi/PuoBERTa-POS",
+      "languages": ["tn"],
+      "tags": ["setswana", "pos-tagging"]
+    }
+  ],
+  "categories": {
+    "speech": "Speech and audio datasets for automatic speech recognition",
+    "text": "Text corpora for NLP tasks including classification, translation, and language modeling",
+    "terminology": "Multilingual terminologies, lexicons, and glossaries",
+    "legal": "Legal documents and court transcripts",
+    "health": "Public health data and epidemiological datasets",
+    "financial": "Financial market data and economic indicators",
+    "educational": "Curated datasets for teaching and coursework"
+  },
+  "languages": {
+    "af": "Afrikaans",
+    "en": "English",
+    "zu": "isiZulu",
+    "xh": "isiXhosa",
+    "st": "Sesotho",
+    "nso": "Sepedi (Northern Sotho)",
+    "tn": "Setswana",
+    "nr": "isiNdebele",
+    "ss": "Siswati",
+    "ve": "Tshivenda",
+    "ts": "Xitsonga",
+    "rw": "Kinyarwanda",
+    "rn": "Kirundi"
+  },
+  "platforms": {
+    "huggingface": "https://huggingface.co/dsfsi",
+    "github": "https://github.com/dsfsi",
+    "zenodo": "https://zenodo.org",
+    "up-repository": "https://researchdata.up.ac.za",
+    "sadilar": "https://repo.sadilar.org",
+    "local": "This repository (data/ directory)"
+  }
+}
