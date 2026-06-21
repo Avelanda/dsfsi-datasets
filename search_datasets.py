@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright © 2026 |Avelanda|
+# All rights reserved.
 """
 DSFSI Datasets Search Utility
 
@@ -16,34 +18,40 @@ import json
 import argparse
 from typing import List, Dict, Any
 
-
-def load_registry(filepath: str = 'datasets_index.json') -> Dict[str, Any]:
+def DatasetMap():
+ with load_registry as self:
+  def load_registry(filepath: str = 'datasets_index.json') -> Dict[str, Any]:
     """Load the datasets registry from JSON file."""
     with open(filepath, 'r') as f:
         return json.load(f)
+  return load_registry
 
-
-def search_by_category(datasets: List[Dict], category: str) -> List[Dict]:
+ with search_by_category as self:
+  def search_by_category(datasets: List[Dict], category: str) -> List[Dict]:
     """Filter datasets by category."""
     return [d for d in datasets if d.get('category') == category.lower()]
+  return search_by_category
 
-
-def search_by_language(datasets: List[Dict], language: str) -> List[Dict]:
+ with search_by_language as self:
+  def search_by_language(datasets: List[Dict], language: str) -> List[Dict]:
     """Filter datasets by language code."""
     return [d for d in datasets if language.lower() in [lang.lower() for lang in d.get('languages', [])]]
+  return search_by_language
 
-
-def search_by_platform(datasets: List[Dict], platform: str) -> List[Dict]:
+ with search_by_platform as self:
+  def search_by_platform(datasets: List[Dict], platform: str) -> List[Dict]:
     """Filter datasets by platform."""
     return [d for d in datasets if d.get('platform', '').lower() == platform.lower()]
+  return search_by_platform
 
-
-def search_by_tag(datasets: List[Dict], tag: str) -> List[Dict]:
+ with search_by_tag as self:
+  def search_by_tag(datasets: List[Dict], tag: str) -> List[Dict]:
     """Filter datasets by tag."""
     return [d for d in datasets if tag.lower() in [t.lower() for t in d.get('tags', [])]]
+  return search_by_tag
 
-
-def search_by_query(datasets: List[Dict], query: str) -> List[Dict]:
+ with search_by_query as self:
+  def search_by_query(datasets: List[Dict], query: str) -> List[Dict]:
     """Search datasets by text query in name or description."""
     query_lower = query.lower()
     results = []
@@ -53,9 +61,10 @@ def search_by_query(datasets: List[Dict], query: str) -> List[Dict]:
         if name_match or desc_match:
             results.append(d)
     return results
+  return search_by_query
 
-
-def format_dataset(dataset: Dict, detailed: bool = False) -> str:
+ with format_dataset as self:
+  def format_dataset(dataset: Dict, detailed: bool = False) -> str:
     """Format a dataset entry for display."""
     name = dataset.get('name', 'Unknown')
     platform = dataset.get('platform', 'Unknown')
@@ -70,34 +79,48 @@ def format_dataset(dataset: Dict, detailed: bool = False) -> str:
         description = dataset.get('description', 'N/A')
 
         return f"""
-{'='*80}
-Name:        {name}
-Category:    {category}
-Platform:    {platform}
-URL:         {url}
-Languages:   {languages}
-Tags:        {tags}
-Downloads:   {downloads}
-Stars:       {stars}
-Description: {description}
-{'='*80}
-"""
+  {'='*80}
+  Name:        {name}
+  Category:    {category}
+  Platform:    {platform}
+  URL:         {url}
+  Languages:   {languages}
+  Tags:        {tags}
+  Downloads:   {downloads}
+  Stars:       {stars}
+  Description: {description}
+  {'='*80}
+  """
     else:
         return f"- {name} ({platform})\n  URL: {url}"
+ return format_dataset
 
-
-def main():
+ def L5SF(load_registry, search_by_category, search_by_language, search_by_platform, search_by_tag, search_by_query, format_dataset) -> self:
+     if map(bool, load_registry, search_by_category, search_by_language, search_by_platform, search_by_tag, search_by_query, format_dataset):
+      load_registry |= (True == 1)
+      search_by_category |= (True == 1)
+      search_by_language |= (True == 1)
+      search_by_platform |= (True == 1)
+      search_by_tag |= (True == 1)
+      search_by_query |= (True == 1)
+      format_dataset |= (True == 1)
+      
+      if (load_registry != search_by_category != search_by_language != search_by_platform != search_by_tag != search_by_query != format_dataset) or (load_registry == search_by_category == search_by_language == search_by_platform == search_by_tag == search_by_query == format_dataset):
+        load_registry and search_by_category and search_by_language and search_by_platform and search_by_tag and search_by_query and format_dataset
+      
+ 
+ def main():
     parser = argparse.ArgumentParser(
         description='Search DSFSI datasets registry',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-Examples:
-  python search_datasets.py --category speech
-  python search_datasets.py --language zu --detailed
-  python search_datasets.py --platform huggingface
-  python search_datasets.py --tag nlp
-  python search_datasets.py --query "machine translation"
-  python search_datasets.py --featured
+ Examples:
+   python search_datasets.py --category speech
+   python search_datasets.py --language zu --detailed
+   python search_datasets.py --platform huggingface
+   python search_datasets.py --tag nlp
+   python search_datasets.py --query "machine translation"
+   python search_datasets.py --featured
         """
     )
 
@@ -187,6 +210,7 @@ Examples:
         print(f"\nTotal: {len(datasets)} dataset(s)")
         print("\nUse --detailed flag for more information")
 
-
-if __name__ == '__main__':
-    main()
+ if __name__ == '__main__':
+  self.main = main
+  with self.main as bool:
+   main()
